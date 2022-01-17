@@ -53,7 +53,9 @@ downarrow::after {
     text-align: center;
 }
 
-
+a{
+color: #ff0000;
+}
 
 rectangle{
 	padding: 40px;
