@@ -1,64 +1,62 @@
-header{
+
+
+header {
 	color: white;
 	background-image: url('src/index/nice.gif');
 	width: 100%;
-  height: 0;
-  padding: 0 0 50%;
-  border: 1px solid;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-
+	height: 0;
+	padding: 0 0 50%;
+	border: 1px solid;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-body{
-color: white;
-
+body {
+	color: white;
 }
 
-
-
-html{
+html {
 	background-color: #2e2e2e;
-  font-size: 25px;
-  scroll-behavior: smooth;
+	font-size: 25px;
+	scroll-behavior: smooth;
 	cursor: url('src/circle.ico'), default;
-
 }
 
 
 /* Creation du boutton pour descendre (trouvée sur internet) */
+
 downarrow {
-    background: #4679BD;
-    text-decoration:none;
-    border-radius: 50%;
-    display: block;
-    height: 80px;
-    width: 80px;
-		position: sticky;
-  	bottom: 5px;
-		justify-content: center;
+	background: #4679BD;
+	text-decoration: none;
+	border-radius: 50%;
+	display: block;
+	height: 80px;
+	width: 80px;
+	position: sticky;
+	bottom: 5px;
+	justify-content: center;
 }
 
 
 /* Pour la fleche sur le cercle */
+
 downarrow::after {
-    content:"\2193";
-    display: block;
-    color: white;
-    font-weight: bold;
-    font-size: 60px;
-    text-align: center;
+	content: "\2193";
+	display: block;
+	color: white;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
 }
 
-a{
-color: #25e3fc;
-
+a {
+	color: #25e3fc;
 }
 
-rectangle{
+rectangle {
 	padding: 40px;
 	margin: 100px;
 	background-color: #33475b;
@@ -67,25 +65,24 @@ rectangle{
 	font-family: Avenir;
 }
 
-aside{
+aside {
 	padding: 10px;
 	background-color: #3d3d3d;
 	border-radius: 3px;
 	color: white;
 	font-family: Avenir;
-
 }
-
 
 
 /* animation retrecissement - https://thebrandsmen.com/css-image-hover-effects/*/
+
 shrink img {
-transition: 0.4s ease;
+	transition: 0.4s ease;
 }
 
-shrink img:hover{
--webkit-transform: scale(0.8);
--ms-transform: scale(0.8);
-transform: scale(0.8);
-transition: 0.4s ease;
+shrink img:hover {
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	transition: 0.4s ease;
 }
