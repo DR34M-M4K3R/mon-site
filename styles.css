@@ -16,6 +16,7 @@ header {
 
 body {
 	color: white;
+	height: 100%;
 }
 
 html {
@@ -23,6 +24,8 @@ html {
 	font-size: 25px;
 	scroll-behavior: smooth;
 	cursor: url('src/circle.ico'), default;
+	height: 100%;
+
 }
 
 
@@ -71,6 +74,11 @@ aside {
 	border-radius: 3px;
 	color: white;
 	font-family: Avenir;
+	height: 100%;
+	margin-right: 1vw;
+	float: left;
+	font-size: 1.3vw;
+	line-height: 2vw;
 }
 
 
