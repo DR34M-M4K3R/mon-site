@@ -8,7 +8,7 @@
 
 ░▀▀█░▀░█▀█░▀█▀░░░█░█░█▀█░█▀█░▀█▀░█▀▀░█░█░█▀▀░█▀▀░█▄█░█▀▀░█▀█░▀█▀░░░█▀▄░█▀▀░█▀▀░█▀█░█▀█░▀█▀░█▀▀░░░█▀▀░█▀▀░▀█▀░▀█▀░█▀▀░░░█▀█░█▀█░█▀▀░█▀▀░░░█▀▄░█▀▀░█▀█░█░█░▀█▀░█▀▀
 ░░░█░░░█▀█░░█░░░░█▀█░█░█░█░█░░█░░█▀▀░█░█░▀▀█░█▀▀░█░█░█▀▀░█░█░░█░░░░█▀▄░█▀▀░█░░░█░█░█▀▀░░█░░█▀▀░░░█░░░█▀▀░░█░░░█░░█▀▀░░░█▀▀░█▀█░█░█░█▀▀░░░█░█░█▀▀░█▀▀░█░█░░█░░▀▀█
-░▀▀░░░░▀░▀░▀▀▀░░░▀░▀░▀▀▀░▀░▀░░▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀░░▀░░░░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░░░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░░▀░░░▀░░▀▀▀░░░▀░░░▀░▀░▀▀▀░▀▀▀░░░▀▀░░▀▀▀░▀░░░▀▀▀░▀▀▀░▀▀▀   https://www.w3docs.com/tools/code-editor/3718
+░▀▀░░░░▀░▀░▀▀▀░░░▀░▀░▀▀▀░▀░▀░░▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀░░▀░░░░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░░░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░░▀░░░▀░░▀▀▀░░░▀░░░▀░▀░▀▀▀░▀▀▀░░░▀▀░░▀▀▀░▀░░░▀▀▀░▀▀▀░▀▀▀   https://www.w3docs.com/tools/code-editor/3718 (mais j'ai changé plein de choses)
   -->
 
 
@@ -35,16 +35,19 @@
       }
       img {
         vertical-align: middle;
-        max-height: 1000px
-         }
-         .slideshow-container {
-           max-width: 1000px;
-           position: relative;
-           margin: auto;
-      /* Next & previous buttons */
+        margin: auto;
+      }
+      .slideshow-container {
+        /*https://stackoverflow.com/a/3250861*/
+        position:fixed;
+        height:100%;
+        top:0px;
+        left: 25%;
+        right: 25%;
+        margin: auto;
+      }
       .prev,
       .next {
-        cursor: pointer;
         position: absolute;
         top: 50%;
         width: auto;
@@ -58,17 +61,14 @@
         user-select: none;
         background-color: rgba(0, 0, 0, 0.6)
       }
-      /* Position the "next button" to the right */
       .next {
         right: 0;
         border-radius: 3px 0 0 3px;
       }
-      /* On hover, add a black background color with a little bit see-through */
       .prev:hover,
       .next:hover {
         background-color: rgba(0, 0, 0, 0.9);
       }
-      /* Caption text */
       .text {
         background-color: rgba(0, 0, 0, 0.6);
         font-size: 30px;
@@ -79,22 +79,22 @@
         text-align: center;
       }
 
-      /* The dots/bullets/indicators */
-      .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #999999;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
+      aside {
+      	padding: 10px;
+      	background-color: #3d3d3d;
+      	border-radius: 3px;
+      	color: white;
+      	font-family: Avenir;
+      	height: 100%;
+      	margin-right: 1vw;
+      	float: left;
+      	font-size: 1.3vw;
+      	line-height: 2vw;
       }
-      .active,
-      .dot:hover {
-        background-color: #111111;
+      a {
+      	color: #25e3fc;
       }
-      /* Fading animation */
+
       .fade {
         -webkit-animation-name: fade;
         -webkit-animation-duration: 1.5s;
@@ -129,10 +129,34 @@
   </head>
   <body>
 
+    <aside>
+        <ul>
 
-<center>
-<h1>Photos de randonnées</h1>
-</center>
+            <li><a href="index.html">Page principale</a></li>
+            <ul>
+
+                <li><a href="projets.html#liste-projets">Mes projets</a></li>
+
+                <li><a href="passions.html">Mes passions</a></li>
+
+                <ul>
+                    <li><a href="musiques.html">La musique classique</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="projets.html">L'informatique</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="sciences.html">L'astrophysique<br>/la physique quantique</a></li>
+                </ul>
+
+
+                <li><a href="orientation.html">Mon orientation</a></li>
+            </ul>
+        </ul>
+
+    </aside>
 
 
 <!-- ATTENTION LES YEUX: -->
@@ -218,27 +242,7 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-  <span class="dot" onclick="currentSlide(9)"></span>
-  <span class="dot" onclick="currentSlide(10)"></span>
-  <span class="dot" onclick="currentSlide(11)"></span>
-  <span class="dot" onclick="currentSlide(12)"></span>
-  <span class="dot" onclick="currentSlide(13)"></span>
-  <span class="dot" onclick="currentSlide(14)"></span>
-  <span class="dot" onclick="currentSlide(15)"></span>
-  <span class="dot" onclick="currentSlide(16)"></span>
-  <span class="dot" onclick="currentSlide(17)"></span>
-  <span class="dot" onclick="currentSlide(18)"></span>
-  <span class="dot" onclick="currentSlide(19)"></span>
-</div>
+
     <script>
       var slideIndex = 1;
       showSlides(slideIndex);
